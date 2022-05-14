@@ -19,7 +19,7 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact Me</a></li>
 
@@ -37,7 +37,7 @@
 
     <section id="about">
         <div id="pic">
-            <h1 class="headings">ABOUT ME</h1>
+            <h1 class="headings-about">ABOUT ME</h1>
             <img src="Images/ProfileImage.jpeg" alt="">
             <div id="intro">
                 <h2>Andrei Duduman</h2>
@@ -54,10 +54,9 @@
         </div>
     </section>
 
-    <section id="portfolio">
-        <h1 class="headings">PORTFOLIO</h1>
+    <section id="projects">
+        <h1 class="headings">PROJECTS</h1>
         <div class="gallery">
-            <img src="Images/projectImage.jpg" alt="">
             <img src="Images/projectImage.jpg" alt="">
             <img src="Images/projectImage.jpg" alt="">
             <img src="Images/projectImage.jpg" alt="">
@@ -71,7 +70,54 @@
         <div class="row">
             <div class="box">
                 <img src="Images/designTool.jpg" alt="">
-                <h1 class="headings">Website Design</h1>
+                <h1 class="headings">HTML</h1>
+                <p>I have worked using HTML and other technologies for most of my projects always improving current code and 
+                    adding new technologies as I learn them along the way on my projects.
+                </p>
+            </div>
+            <div class="box">
+                <img src="Images/designTool.jpg" alt="">
+                <h1 class="headings">CSS</h1>
+                <p>Styling using CSS has been one of my favourites as you can develop anything 
+                    as long as you can imagine it and program it there are no limits just as long
+                    as you know how to implement it.
+                </p>
+            </div>
+            <div class="box">
+                <img src="Images/designTool.jpg" alt="">
+                <h1 class="headings">Vue.js</h1>
+                <p>This Javascript framework is something I'm really excited to learn about 
+                    as it has proved to make some of my projects really easy to code as they help 
+                    make code cleaner and readable.</p>
+            </div>
+            <div class="box">
+                <img src="Images/designTool.jpg" alt="">
+                <h1 class="headings">Javascript</h1>
+                <p>Being one of the most popular programming languages used in over 97% of websites. Learning 
+                    Javascript has been a no brainer as it is required by all of the firms that are recruiting
+                    and is a must for any web developer. I enjoy using this programming language and looking 
+                    forwards to discovering all of it's features.
+                </p>
+            </div>
+            <div class="box">
+                <img src="Images/designTool.jpg" alt="">
+                <h1 class="headings">ReactJS</h1>
+                <p>I have done some introductory material for this Javascript library but I am still dipping 
+                    my toes into what can be a huge step into my web development career. I have got some projects 
+                    lined up using react that will hopefullly help me improve my programming skills further.
+                </p>
+            </div>
+            <div class="box">
+                <img src="Images/designTool.jpg" alt="">
+                <h1 class="headings">Typescript</h1>
+                <p>I do not have a lot of experience in this particular language but I am trying to develop some
+                    of my projects using as much of it as I can learn to help me widen my knowledge about both Typescript 
+                    and how it can be used to improve my Javascript development.
+                </p>
+            </div>
+            <!-- <div class="box">
+                <img src="Images/designTool.jpg" alt="">
+                <h1 class="headings">Node.js</h1>
                 <p>Introduction paragraph Introduction paragraphIntroduction paragraph
                     Introduction paragraphIntroduction paragraphIntroduction paragraph
                     Introduction paragraphIntroduction paragraphIntroduction paragraph
@@ -80,7 +126,7 @@
             </div>
             <div class="box">
                 <img src="Images/designTool.jpg" alt="">
-                <h1 class="headings">Website Design</h1>
+                <h1 class="headings">REST API</h1>
                 <p>Introduction paragraph Introduction paragraphIntroduction paragraph
                     Introduction paragraphIntroduction paragraphIntroduction paragraph
                     Introduction paragraphIntroduction paragraphIntroduction paragraph
@@ -89,23 +135,54 @@
             </div>
             <div class="box">
                 <img src="Images/designTool.jpg" alt="">
-                <h1 class="headings">Website Design</h1>
+                <h1 class="headings">MongoDB</h1>
                 <p>Introduction paragraph Introduction paragraphIntroduction paragraph
                     Introduction paragraphIntroduction paragraphIntroduction paragraph
                     Introduction paragraphIntroduction paragraphIntroduction paragraph
                     Introduction paragraphIntroduction paragraphIntroduction paragraph
                     Introduction paragraphIntroduction paragraphIntroduction paragraph</p>
+            </div> -->
+            <div class="box">
+                <img src="Images/designTool.jpg" alt="">
+                <h1 class="headings">Git</h1>
+                <p>Version control is something I was really looking forward to when projects 
+                    have started to pile up and the workload increased. This tool has been amazing at 
+                    helping me manage my work efficiently and has been really easy to use and understand.
+                </p>
             </div>
         </div>
     </section>
+
     <section id="contact">
         <h1 class="headings">CONTACT</h1>
-        <form action="" class="form">
-            <input type="text" name="name" class="input" placeholder="Enter Your Name">
-            <input type="email" name="email" class="input" placeholder="Enter Your Email">
-            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
-            <input type="submit" value="SEND" id="send">
+        <div class="container">
+        <form action="https://formspree.io/f/xrgjradb" class="form" method="POST" id="my-form">
+
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+
+            <button id="my-form-status" type="submit">Submit</button>
         </form>
+        </div>
+        <div id="status"></div>
     </section>
+    <script src="main.js"></script>
 </body>
 </html>
